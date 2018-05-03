@@ -7,11 +7,12 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.SeekBar;
 import android.widget.Spinner;
-import android.widget.TextView;
 
 public class ThirdActivity extends AppCompatActivity  {
+
+    //Profile Activity
+
 
     int hours;
     String profile;
@@ -58,29 +59,6 @@ public class ThirdActivity extends AppCompatActivity  {
 
 
 
-        //seek Bar
-        SeekBar sb = (SeekBar) findViewById(R.id.seekBar);
-        final TextView tv = (TextView) findViewById(R.id.HoursTxt);
-
-        sb.setMax(12);
-
-        sb.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                hours=progress;
-                tv.setText(progress + " Hours");
-            }
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-                hours=seekBar.getProgress();
-                tv.setText(seekBar.getProgress() + " Hours");
-            }
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-                hours=seekBar.getProgress();
-                tv.setText(seekBar.getProgress() + " Hours");
-            }
-        });
 
 
         Button okBtn = findViewById(R.id.okBtn);
@@ -92,7 +70,6 @@ public class ThirdActivity extends AppCompatActivity  {
                 // Send back informations
                 startIntent.putExtra("tech.amuesy.amuesy.profile",profile);
                 startIntent.putExtra("tech.amuesy.amuesy.level",level);
-                startIntent.putExtra("tech.amuesy.amuesy.hours",hours);
 
                 startActivity(startIntent);
             }
