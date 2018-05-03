@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Amuesy</string>
-    
+
     <string-array name="Profiles">
         <item>Child</item>
         <item>Teen</item>
@@ -22,9 +22,7 @@
         <item>AAA</item>
         <item>Test</item>
     </string-array>
+    <string name="title_activity_maps1">Map</string>
 
 
-
-
-    
 </resources>
