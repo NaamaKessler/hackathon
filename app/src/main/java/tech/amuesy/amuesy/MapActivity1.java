@@ -65,6 +65,10 @@ public class MapActivity1 extends AppCompatActivity implements OnMapReadyCallbac
                         permissions,
                         LOCATION_PERMISSION_REQUEST_CODE);
             }
+        }else{
+            ActivityCompat.requestPermissions(this,
+                        permissions,
+                        LOCATION_PERMISSION_REQUEST_CODE);
         }
     }
 
