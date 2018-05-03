@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#FF6600</color>
-    <color name="colorPrimaryDark">#993D00</color>
-    <color name="colorAccent">#f63e15</color>
-    <color name="orangedark">#993D00</color>
-    <color name="orangemid">#FF6600</color>
+    <color name="colorPrimary">#fb7a24</color>
+    <color name="colorPrimaryDark">#773000</color>
+    <color name="colorAccent">#773000</color>
+    <color name="orangedark">#773000</color>
+    <color name="orangemid">#fb7a24</color>
     <color name="orangelight">#ff9d48</color>
     <color name="almostwhite">#f1c088</color>
     <color name="whitemid">#f5d8b6</color>
