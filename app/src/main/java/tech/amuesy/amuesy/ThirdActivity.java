@@ -1,14 +1,11 @@
 package tech.amuesy.amuesy;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
-import android.widget.AutoCompleteTextView;
+import android.support.v7.app.AppCompatActivity;
 
 public class ThirdActivity extends AppCompatActivity {
 
 
-    private static String[] Museum_list = new String[]{"Mus1","Haifa","TLV","Jerusalem","Paris","London"};
 
 
     @Override
@@ -16,10 +13,11 @@ public class ThirdActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
 
+       // String[] Museum_list = new String[]{"Mus1","Haifa","TLV","Jerusalem","Paris","London"};
 
-        AutoCompleteTextView MusNameTxt = findViewById(R.id.MusNameTxt);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item, Museum_list);
-        MusNameTxt.setAdapter(adapter);
+      //  AutoCompleteTextView MusNameTxt = findViewById(R.id.MusNameTxt);
+       // ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item, Museum_list);
+      //  MusNameTxt.setAdapter(adapter);
     }
 
     //comment
