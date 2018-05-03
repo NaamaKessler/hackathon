@@ -20,6 +20,35 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="153dp" />
 
+    <Button
+        android:id="@+id/nearbyActBtn"
+        android:layout_width="124dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Nearby Museums"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseActBtn" />
+
+    <Button
+        android:id="@+id/settingsActBtn"
+        android:layout_width="124dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nearbyActBtn" />
+
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="91dp"
@@ -28,11 +57,5 @@
         tools:layout_editor_absoluteX="147dp"
         tools:layout_editor_absoluteY="31dp" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="127dp"
-        android:layout_height="42dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="218dp" />
+
 </android.support.constraint.ConstraintLayout>
