@@ -19,14 +19,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBlbbyytkC8PkYpPf_Av2nIjtx1q8rXxy4" />
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-
 
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -46,13 +44,13 @@
              You can define the keys for the debug and release targets in src/debug/ and src/release/. 
         -->
 
-
         <activity
             android:name=".MapsActivity1"
             android:label="@string/title_activity_maps1" />
         <activity android:name=".SettingsActivity" />
-        <activity android:name=".InMuseumActivity"></activity>
-        <activity android:name=".TourCreatorActivity"></activity>
+        <activity android:name=".InMuseumActivity" />
+        <activity android:name=".TourCreatorActivity" />
+        <activity android:name=".MusInfoActivity"></activity>
     </application>
 
 </manifest>
