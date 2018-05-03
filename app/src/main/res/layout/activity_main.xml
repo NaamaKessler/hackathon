@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/orangemid"
     tools:context=".MainActivity">
+
 
 
     <Button
         android:id="@+id/chooseActBtn"
-        android:layout_width="124dp"
-        android:layout_height="51dp"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
@@ -23,8 +25,8 @@
 
     <Button
         android:id="@+id/nearbyActBtn"
-        android:layout_width="124dp"
-        android:layout_height="51dp"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
@@ -37,8 +39,8 @@
 
     <Button
         android:id="@+id/settingsActBtn"
-        android:layout_width="124dp"
-        android:layout_height="51dp"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
