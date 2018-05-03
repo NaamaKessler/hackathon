@@ -49,7 +49,7 @@ public class TourCreatorActivity extends AppCompatActivity {
         NextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(),MainActivity.class);
+                Intent startIntent = new Intent(getApplicationContext(),TourActivity.class);
                 startIntent.putExtra("tech.amuesy.amuesy.hours",hours);
 
                 startActivity(startIntent);
