@@ -8,16 +8,31 @@
 
 
     <Button
-        android:id="@+id/secActBtn"
+        android:id="@+id/chooseActBtn"
         android:layout_width="124dp"
         android:layout_height="51dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="56dp"
         android:text="Choose Museum"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="153dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="91dp"
+        android:layout_height="89dp"
+        app:srcCompat="@android:drawable/ic_menu_gallery"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="31dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="127dp"
+        android:layout_height="42dp"
+        android:text="Button"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="218dp" />
 </android.support.constraint.ConstraintLayout>
