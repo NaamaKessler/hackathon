@@ -50,7 +50,8 @@
         <activity android:name=".SettingsActivity" />
         <activity android:name=".InMuseumActivity" />
         <activity android:name=".TourCreatorActivity" />
-        <activity android:name=".MusInfoActivity"></activity>
+        <activity android:name=".MusInfoActivity" />
+        <activity android:name=".TourActivity"></activity>
     </application>
 
 </manifest>
