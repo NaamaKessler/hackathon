@@ -10,11 +10,14 @@ import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-public class ThirdActivity extends AppCompatActivity {
+public class ThirdActivity extends AppCompatActivity  {
 
-    double progress_val = 24;
+    int hours;
+    String profile;
+    String level;
     TextView tv;
     SeekBar sb;
+
 
 
     @Override
@@ -41,22 +44,28 @@ public class ThirdActivity extends AppCompatActivity {
         //seek Bar
         sb = (SeekBar) findViewById(R.id.seekBar);
         tv = (TextView) findViewById(R.id.HoursTxt);
+
         sb.setMax(12);
 
         sb.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                hours=progress;
                 tv.setText(progress + " Hours");
             }
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
+                hours=seekBar.getProgress();
                 tv.setText(seekBar.getProgress() + " Hours");
             }
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
+                hours=seekBar.getProgress();
                 tv.setText(seekBar.getProgress() + " Hours");
             }
         });
+
+
 
 
         Button okBtn = findViewById(R.id.okBtn);
@@ -64,11 +73,22 @@ public class ThirdActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent startIntent = new Intent(getApplicationContext(), MainActivity.class);
+
+                // Send back informations
+              //  startIntent.putExtra("tech.amuesy.amuesy.profile",item);
+              //  startIntent.putExtra("tech.amuesy.amuesy.level",level);
+              //  startIntent.putExtra("tech.amuesy.amuesy.hours",hours);
+
+
                 startActivity(startIntent);
             }
+
+
         });
 
 
     }
 
+
 }
+

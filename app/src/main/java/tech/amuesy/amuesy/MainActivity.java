@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,6 +40,23 @@ public class MainActivity extends AppCompatActivity {
 
 
         });
+
+
+
+
+
+        if (getIntent().hasExtra("tech.amuesy.amuesy.profile")){
+            TextView tv = (TextView) findViewById(R.id.textViewMain);
+
+            String text1 = getIntent().getExtras().getString("tech.amuesy.amuesy.profile");
+            String text2 = getIntent().getExtras().getString("tech.amuesy.amuesy.level");
+          //  int text3 = getIntent().getExtras().getInt("tech.amuesy.amuesy.hours");
+
+            tv.setText(text1+text2);
+          //  Intent startIntent2 = new Intent(getApplicationContext(), SecondActivity.class);
+           // startActivity(startIntent2);
+        }
+
 
     }
     /**
