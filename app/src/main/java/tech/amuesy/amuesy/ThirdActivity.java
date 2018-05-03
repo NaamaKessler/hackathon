@@ -7,15 +7,21 @@ import android.widget.AutoCompleteTextView;
 
 public class ThirdActivity extends AppCompatActivity {
 
+
+    private static String[] Museum_list = new String[]{"Mus1","Haifa","TLV","Jerusalem","Paris","London"};
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
+
+
         AutoCompleteTextView MusNameTxt = findViewById(R.id.MusNameTxt);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item, Museum_list);
         MusNameTxt.setAdapter(adapter);
     }
 
     //comment
-    private static String[] Museum_list = new String[]{"Mus1","Haifa","TLV","Jerusalem","Paris","London"};
+
 }

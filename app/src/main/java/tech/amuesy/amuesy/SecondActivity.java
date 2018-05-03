@@ -18,17 +18,17 @@ public class SecondActivity extends AppCompatActivity {
 
         firstActivityBtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(),MainActivity.class);
-                startActivity(startIntent);
+            public void onClick(View v1) {
+                Intent start1Intent = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(start1Intent);
             }
         });
 
         thirdActivityBtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(),ThirdActivity.class);
-                startActivity(startIntent);
+            public void onClick(View v2) {
+                Intent start2Intent = new Intent(getApplicationContext(),ThirdActivity.class);
+                startActivity(start2Intent);
             }
         });
 
