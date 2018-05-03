@@ -41,20 +41,6 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        Button nearbyActBtn = findViewById(R.id.nearbyActBtn);
-        nearbyActBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), MapsActivity1.class);
-                startActivity(startIntent);
-            }
-
-
-        });
-
-
-
-
 
         if (getIntent().hasExtra("tech.amuesy.amuesy.profile")){
             TextView tv = (TextView) findViewById(R.id.textViewMain);
