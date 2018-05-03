@@ -14,6 +14,8 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
 
         Button firstActivityBtn = findViewById(R.id.firstActBtn);
+        Button thirdActivityBtn = findViewById(R.id.thirdActBtn);
+
         firstActivityBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -21,5 +23,17 @@ public class SecondActivity extends AppCompatActivity {
                 startActivity(startIntent);
             }
         });
+
+        thirdActivityBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(),ThirdActivity.class);
+                startActivity(startIntent);
+            }
+        });
+
+
+
+
     }
 }
