@@ -42,9 +42,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
-
-
         if (getIntent().hasExtra("tech.amuesy.amuesy.profile")){
             TextView tv = (TextView) findViewById(R.id.textViewMain);
 

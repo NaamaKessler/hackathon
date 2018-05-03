@@ -16,8 +16,6 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
 
         Button firstActivityBtn = findViewById(R.id.firstActBtn);
-        Button thirdActivityBtn = findViewById(R.id.thirdActBtn);
-
         firstActivityBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v1) {
@@ -26,12 +24,15 @@ public class SecondActivity extends AppCompatActivity {
             }
         });
 
-        thirdActivityBtn.setOnClickListener(new View.OnClickListener() {
+        Button muschooseActBtn = findViewById(R.id.muschooseActBtn);
+        muschooseActBtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v2) {
-                Intent start2Intent = new Intent(getApplicationContext(),ThirdActivity.class);
-                startActivity(start2Intent);
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), InMuseumActivity.class);
+                startActivity(startIntent);
             }
+
+
         });
 
         //String[] Museum_list2 = new String[]{"Mus1","Haifa","TLV","Jerusalem","Paris","London"};
