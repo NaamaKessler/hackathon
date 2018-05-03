@@ -11,7 +11,7 @@ public class ThirdActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
-        AutoCompleteTextView MusNameTxt = (AutoCompleteTextView)findViewById(R.id.MusNameTxt);
+        AutoCompleteTextView MusNameTxt = findViewById(R.id.MusNameTxt);
         ArrayAdapter<String> adapter = new ArrayAdapter<string>(this,R.layout.support_simple_spinner_dropdown_item,Museum_list);
         MusNameTxt.setAdapter(adapter);
     }
