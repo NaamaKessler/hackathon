@@ -18,6 +18,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Page 3 - Configuration"
+        android:textStyle="bold"
+        android:textAlignment="center"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
