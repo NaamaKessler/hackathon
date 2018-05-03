@@ -7,13 +7,24 @@
         <item>Adult</item>
     </string-array>
 
+    <string-array name="Levels">
+        <item>Easy</item>
+        <item>Intermediate</item>
+        <item>Hard</item>
+
+    </string-array>
+
     <string-array name="Museums">
         <item>Paris</item>
         <item>TLV</item>
         <item>Haifa</item>
         <item>Jerusalem</item>
         <item>London</item>
+        <item>AAA</item>
+        <item>Test</item>
     </string-array>
+
+
 
 
     

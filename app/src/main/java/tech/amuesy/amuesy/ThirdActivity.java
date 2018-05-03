@@ -17,10 +17,20 @@ public class ThirdActivity extends AppCompatActivity {
 
         Spinner ProfileSpinner = (Spinner) findViewById(R.id.ProfileSpinner);
 
-        ArrayAdapter<String> adapter3 = new ArrayAdapter<String>(ThirdActivity.this,
+        ArrayAdapter<String> adapter3_1 = new ArrayAdapter<String>(ThirdActivity.this,
                 android.R.layout.simple_list_item_1,getResources().getStringArray((R.array.Profiles)));
-        adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        ProfileSpinner.setAdapter(adapter3);
+        adapter3_1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ProfileSpinner.setAdapter(adapter3_1);
+
+
+        Spinner LevelSpinner = (Spinner) findViewById(R.id.LevelSpinner);
+        ArrayAdapter<String> adapter3_2 = new ArrayAdapter<String>(ThirdActivity.this,
+                android.R.layout.simple_list_item_1,getResources().getStringArray((R.array.Levels)));
+        adapter3_2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ProfileSpinner.setAdapter(adapter3_2);
+
+
+
 
     }
 
