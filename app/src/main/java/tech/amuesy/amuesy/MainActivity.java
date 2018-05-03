@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button secActivityBtn = findViewById(R.id.chooseActBtn);
-        secActivityBtn.setOnClickListener(new View.OnClickListener() {
+        Button chooseActBtn = findViewById(R.id.chooseActBtn);
+        chooseActBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent startIntent = new Intent(getApplicationContext(), SecondActivity.class);
@@ -28,6 +28,18 @@ public class MainActivity extends AppCompatActivity {
 
 
         });
+
+        Button settingsActBtn = findViewById(R.id.settingsActBtn);
+        settingsActBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), ThirdActivity.class);
+                startActivity(startIntent);
+            }
+
+
+        });
+
     }
     /**
      * A native method that is implemented by the 'native-lib' native library,
