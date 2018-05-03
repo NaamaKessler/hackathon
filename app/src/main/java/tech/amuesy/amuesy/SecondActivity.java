@@ -11,19 +11,19 @@ import android.widget.Button;
 public class SecondActivity extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second);
+            protected void onCreate(Bundle savedInstanceState) {
+                super.onCreate(savedInstanceState);
+                setContentView(R.layout.activity_second);
 
-        Button firstActivityBtn = findViewById(R.id.firstActBtn);
-        Button chooseMusBtn = findViewById(R.id.chooseMusBtn);
+                Button firstActivityBtn = findViewById(R.id.firstActBtn);
+                Button chooseMusBtn = findViewById(R.id.chooseMusBtn);
 
-        firstActivityBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v1) {
-                Intent start1Intent = new Intent(getApplicationContext(),MainActivity.class);
-                startActivity(start1Intent);
-            }
+                firstActivityBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v1) {
+                        Intent start1Intent = new Intent(getApplicationContext(),MainActivity.class);
+                        startActivity(start1Intent);
+                    }
         });
 
         chooseMusBtn.setOnClickListener(new View.OnClickListener() {

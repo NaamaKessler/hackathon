@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         settingsActBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), ThirdActivity.class);
+                Intent startIntent = new Intent(getApplicationContext(), SettingsActivity.class);
                 startActivity(startIntent);
             }
 
