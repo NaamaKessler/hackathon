@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Amuesy</string>
+    
+    <string-array name="Profiles">
+        <item>Child</item>
+        <item>Teen</item>
+        <item>Adult</item>
+    </string-array>
+
+    <string-array name="Museums">
+        <item>Paris</item>
+        <item>TLV</item>
+        <item>Haifa</item>
+        <item>Jerusalem</item>
+        <item>London</item>
+    </string-array>
+
+
+    
 </resources>

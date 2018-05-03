@@ -34,10 +34,11 @@ public class SecondActivity extends AppCompatActivity {
             }
         });
 
-        String[] Museum_list2 = new String[]{"Mus1","Haifa","TLV","Jerusalem","Paris","London"};
+        //String[] Museum_list2 = new String[]{"Mus1","Haifa","TLV","Jerusalem","Paris","London"};
 
         AutoCompleteTextView MusNameTxtp2 = findViewById(R.id.MusNameTxtp2);
-        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item, Museum_list2);
+        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item,
+                getResources().getStringArray((R.array.Museums)));
         MusNameTxtp2.setAdapter(adapter2);
 
 

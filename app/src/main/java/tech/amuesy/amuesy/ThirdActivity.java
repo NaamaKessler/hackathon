@@ -2,6 +2,8 @@ package tech.amuesy.amuesy;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 public class ThirdActivity extends AppCompatActivity {
 
@@ -13,11 +15,13 @@ public class ThirdActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
 
-       // String[] Museum_list = new String[]{"Mus1","Haifa","TLV","Jerusalem","Paris","London"};
+        Spinner ProfileSpinner = (Spinner) findViewById(R.id.ProfileSpinner);
 
-      //  AutoCompleteTextView MusNameTxt = findViewById(R.id.MusNameTxt);
-       // ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item, Museum_list);
-      //  MusNameTxt.setAdapter(adapter);
+        ArrayAdapter<String> adapter3 = new ArrayAdapter<String>(ThirdActivity.this,
+                android.R.layout.simple_list_item_1,getResources().getStringArray((R.array.Profiles)));
+        adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ProfileSpinner.setAdapter(adapter3);
+
     }
 
     //comment
