@@ -22,6 +22,23 @@
         <item>AAA</item>
         <item>Test</item>
     </string-array>
+
+    <string name="Categories_1">Modern Art</string>
+    <string name="Categories_2">Israeli Art</string>
+    <string name="Categories_3">Prints and Drawings</string>
+    <string name="Categories_4">Photography</string>
+    <string name="Categories_5">Architecture and Design</string>
+    <string-array name="Categories">
+        <item>@string/Categories_1</item>
+        <item>@string/Categories_2</item>
+        <item>@string/Categories_3</item>
+        <item>@string/Categories_4</item>
+        <item>@string/Categories_5</item>
+    </string-array>
+
+
+
+
     <string name="title_activity_maps1">Map</string>
 
 

@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
                 Intent startIntent = new Intent(getApplicationContext(), SecondActivity.class);
                 startActivity(startIntent);
             }
+
+
         });
 
         Button settingsActBtn = findViewById(R.id.settingsActBtn);
@@ -40,16 +42,18 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        if (getIntent().hasExtra("tech.amuesy.amuesy.profile")){
+
+
+
+        if ((getIntent().hasExtra("tech.amuesy.amuesy.profile")||(getIntent().hasExtra("tech.amuesy.amuesy.level"))||
+                (getIntent().hasExtra("tech.amuesy.amuesy.hours")))){
             TextView tv = (TextView) findViewById(R.id.textViewMain);
 
-            String text1 = getIntent().getExtras().getString("tech.amuesy.amuesy.profile");
-            String text2 = getIntent().getExtras().getString("tech.amuesy.amuesy.level");
-          //  int text3 = getIntent().getExtras().getInt("tech.amuesy.amuesy.hours");
+            String profile_info = getIntent().getExtras().getString("tech.amuesy.amuesy.profile");
+            String level_info = getIntent().getExtras().getString("tech.amuesy.amuesy.level");
+            int hours_info = getIntent().getExtras().getInt("tech.amuesy.amuesy.hours");
 
-            tv.setText(text1+text2);
-          //  Intent startIntent2 = new Intent(getApplicationContext(), SecondActivity.class);
-           // startActivity(startIntent2);
+            tv.setText(profile_info+","+level_info+","+hours_info);
         }
 
 
