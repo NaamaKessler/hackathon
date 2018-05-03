@@ -5,7 +5,6 @@ public class Item {
     private final String title, artist, period, childInfo, adultInfo, expertInfo;
     private final int floor, room, childGrade, adultGrade, expertGrade;
 
-
     public Item(List attributes){
         this.title = (String)attributes.get(0);
         this.artist = (String)attributes.get(1);
@@ -16,8 +15,8 @@ public class Item {
         this.adultGrade = (int)attributes.get(6);
         this.expertGrade = (int)attributes.get(7);;
         this.childInfo = (String)attributes.get(8);
-        this.adultInfo = (String)attributes.get(4);
-        this.expertInfo = (String)attributes.get(4);
+        this.adultInfo = (String)attributes.get(9);
+        this.expertInfo = (String)attributes.get(10);
     }
 
     public void presentItem(){

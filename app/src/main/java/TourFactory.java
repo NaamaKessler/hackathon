@@ -29,9 +29,9 @@ public class TourFactory {
             // open excel and sort items according to visitorType ranking:
             Application application;
             application = new Application();
-//            if (!application.isVisible()) {
-//                application.setVisible(true);
-//            }
+            if (!application.isVisible()) {
+                application.setVisible(true);
+            }
             File xlsFile = new File("Data1.xlsx");
             Workbook workbook = application.openWorkbook(xlsFile);
             Worksheet sheet = workbook.getActiveWorksheet();
@@ -40,7 +40,6 @@ public class TourFactory {
 
 //             select k-best:
             for (int i = 0; i < numItems; i++){
-                java.util.List itemData = sheet.getRow(i).getCells();
                 tour.add(new Item(sheet.getRow(i).getCells()));
             }
             return tour;
@@ -52,8 +51,6 @@ public class TourFactory {
             e.printStackTrace();
             return null;
         }
-
-
     }
 
 }

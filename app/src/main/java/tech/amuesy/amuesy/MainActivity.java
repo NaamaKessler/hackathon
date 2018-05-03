@@ -1,7 +1,9 @@
 package tech.amuesy.amuesy;
 
 import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -55,20 +57,27 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-
-
-
-
-        if ((getIntent().hasExtra("tech.amuesy.amuesy.profile")||(getIntent().hasExtra("tech.amuesy.amuesy.level"))||
+        // get user's setting:
+        if ((getIntent().hasExtra("tech.amuesy.amuesy.profile")||
+                (getIntent().hasExtra("tech.amuesy.amuesy.level"))||
                 (getIntent().hasExtra("tech.amuesy.amuesy.hours")))){
             TextView tv = (TextView) findViewById(R.id.textViewMain);
-
-            String profile_info = getIntent().getExtras().getString("tech.amuesy.amuesy.profile");
+            String profile_info = getIntent().getExtras().getString("tech.amuesy.amuesy.profile"); //todo: nullPtrExcept.
             String level_info = getIntent().getExtras().getString("tech.amuesy.amuesy.level");
             int hours_info = getIntent().getExtras().getInt("tech.amuesy.amuesy.hours");
 
             tv.setText(profile_info+","+level_info+","+hours_info);
+
+            // save user's settings:
+            SharedPreferences sharedPref = this.getPreferences(Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = sharedPref.edit();
+            editor.putInt("duration_info", hours_info);
+            editor.putString("level_info", level_info);
+            editor.putString("profile_info", profile_info);
+            editor.apply();
         }
+
+
 
 
     }
