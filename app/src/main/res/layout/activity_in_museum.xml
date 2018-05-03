@@ -9,16 +9,81 @@
 
 
     <!--Title-->
+
+    <Button
+        android:id="@+id/createtourActBtn"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_button"
+        android:text="Create Tour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/musmapActBtn" />
+
+    <Button
+        android:id="@+id/musmapActBtn"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_button"
+        android:text="Museum Map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scanActBtn" />
+
+    <Button
+        android:id="@+id/musInfoActBtn"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginTop="56dp"
+        android:background="@drawable/rounded_button"
+        android:text="Museum Info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+    <Button
+        android:id="@+id/scanActBtn"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_button"
+        android:text="Start Scaning"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/musInfoActBtn" />
+
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/Title"
         android:layout_width="250dp"
         android:layout_height="80dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="3dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="3dp"
-        android:layout_marginTop="60dp"
-        android:text="<Name of Museum>"
+        android:layout_marginTop="52dp"
+        android:text="Name of Museum"
         android:textAlignment="center"
         android:textSize="28sp"
         android:textStyle="bold"

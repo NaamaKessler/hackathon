@@ -26,8 +26,6 @@ public class MainActivity extends AppCompatActivity {
                 Intent startIntent = new Intent(getApplicationContext(), SecondActivity.class);
                 startActivity(startIntent);
             }
-
-
         });
 
         Button settingsActBtn = findViewById(R.id.settingsActBtn);
