@@ -31,21 +31,23 @@
 
     <Spinner
         android:id="@+id/LevelSpinner"
-        android:layout_width="110dp"
+        android:layout_width="130dp"
         android:layout_height="40dp"
         android:layout_marginBottom="284dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
+        android:background="@color/almostwhite"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.193"
         app:layout_constraintStart_toEndOf="@+id/textView8" />
 
     <Spinner
         android:id="@+id/ProfileSpinner"
-        android:layout_width="110dp"
+        android:layout_width="130dp"
         android:layout_height="40dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -53,12 +55,14 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:background="@color/almostwhite"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/LevelSpinner"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.193"
         app:layout_constraintStart_toEndOf="@+id/textView7"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.929" />
+        app:layout_constraintVertical_bias="0.919" />
 
     <TextView
         android:id="@+id/textView3"
