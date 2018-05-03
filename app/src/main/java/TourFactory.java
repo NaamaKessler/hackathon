@@ -1,4 +1,4 @@
-
+// ------------------------- imports -------------------------
 import com.jniwrapper.win32.jexcel.Application;
 import com.jniwrapper.win32.jexcel.ExcelException;
 import com.jniwrapper.win32.jexcel.Range;
@@ -10,24 +10,39 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.lang.Math;
 
+
+// ------------------------- factory -------------------------
 public class TourFactory {
     private static final int ITEM_OBSERVATION_DURATION = 10;
 
+    /**
+     * Creates tour accoding to visitor specifications.
+     * @param visitorType adult/child/expert
+     * @param tourDuration minuntes.
+     * @return Tour obj.
+     */
     public ArrayList<Tour> getTour(String visitorType, int tourDuration){
         ArrayList<Tour> Tour;
         int numItems = (int)Math.floor(tourDuration/ITEM_OBSERVATION_DURATION);
 
-        Application application;
         try {
-            application = new Application();
+            // open excel and sort items according to visitorType ranking:
+            Application application = new Application();
             if (!application.isVisible()) {
                 application.setVisible(true);
             }
-            File xlsFile = new File("C:\\Users\\Naama\\Dropbox\\hackathon\\app\\src\\main\\asset");
+            File xlsFile = new File("Data1.xlsx");
             Workbook workbook = application.openWorkbook(xlsFile, true, null);
             Worksheet sheet = workbook.getActiveWorksheet();
             Range data = sheet.getUsedRange();
             data.sort(visitorType, false, false);
+
+            // select k-best:
+            for (int i = 0; i < numItems; i++){
+                Range tourData = sheet.getRow(i);
+//                tourData.get
+            }
+
 
         } catch (ExcelException e) {
             e.printStackTrace();
