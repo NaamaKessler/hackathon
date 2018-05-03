@@ -43,6 +43,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.634" />
 
+    <!--Title-->
     <TextView
         android:id="@+id/textView"
         android:layout_width="250dp"
@@ -64,6 +65,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.066" />
 
+    <!--enter text box-->
     <AutoCompleteTextView
         android:id="@+id/MusNameTxtp2"
         android:layout_width="209dp"
