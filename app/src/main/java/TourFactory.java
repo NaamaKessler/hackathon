@@ -1,6 +1,5 @@
 // ------------------------- imports -------------------------
 import com.jniwrapper.win32.jexcel.Application;
-import com.jniwrapper.win32.jexcel.Cell;
 import com.jniwrapper.win32.jexcel.ExcelException;
 import com.jniwrapper.win32.jexcel.Range;
 import com.jniwrapper.win32.jexcel.Workbook;
@@ -28,17 +27,18 @@ public class TourFactory {
 
         try {
             // open excel and sort items according to visitorType ranking:
-            Application application = new Application();
+            Application application;
+            application = new Application();
 //            if (!application.isVisible()) {
 //                application.setVisible(true);
 //            }
             File xlsFile = new File("Data1.xlsx");
-            Workbook workbook = application.openWorkbook(xlsFile, true, "");
+            Workbook workbook = application.openWorkbook(xlsFile);
             Worksheet sheet = workbook.getActiveWorksheet();
             Range data = sheet.getUsedRange();
             data.sort(visitorType, false, false);
 
-            // select k-best:
+//             select k-best:
             for (int i = 0; i < numItems; i++){
                 java.util.List itemData = sheet.getRow(i).getCells();
                 tour.add(new Item(sheet.getRow(i).getCells()));
