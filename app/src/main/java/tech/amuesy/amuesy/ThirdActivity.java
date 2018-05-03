@@ -16,5 +16,6 @@ public class ThirdActivity extends AppCompatActivity {
         MusNameTxt.setAdapter(adapter);
     }
 
+    //comment
     private static String[] Museum_list = new String[]{"Mus1","Haifa","TLV","Jerusalem","Paris","London"};
 }
