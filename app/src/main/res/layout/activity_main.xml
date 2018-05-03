@@ -8,7 +8,6 @@
     tools:context=".MainActivity">
 
 
-
     <Button
         android:id="@+id/chooseActBtn"
         android:layout_width="250dp"
@@ -17,7 +16,8 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/rounded_button"
         android:text="Choose Museum"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,7 +31,8 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/rounded_button"
         android:text="Nearby Museums"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,6 +47,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="4dp"
+        android:background="@drawable/rounded_button"
         android:text="Settings"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
