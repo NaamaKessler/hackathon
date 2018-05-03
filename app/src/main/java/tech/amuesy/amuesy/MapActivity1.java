@@ -1,3 +1,5 @@
+package tech.amuesy.amuesy;
+
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -13,8 +15,6 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 
-import tech.amuesy.amuesy.R;
-
 public class MapActivity1 extends AppCompatActivity implements OnMapReadyCallback{
 
     @Override
@@ -24,7 +24,7 @@ public class MapActivity1 extends AppCompatActivity implements OnMapReadyCallbac
         mMap = googleMap;
     }
 
-    private static final String TAG = "MapActivity1";
+    private static final String TAG = "tech.amuesy.amuesy.MapActivity1";
 
     private static final String FINE_LOCATION = Manifest.permission.ACCESS_FINE_LOCATION;
     private static final String COURSE_LOCATION = Manifest.permission.ACCESS_COARSE_LOCATION;
