@@ -8,6 +8,7 @@
     tools:context=".ThirdActivity">
 
     <!--Title-->
+
     <TextView
         android:id="@+id/Activity3"
         android:layout_width="250dp"
