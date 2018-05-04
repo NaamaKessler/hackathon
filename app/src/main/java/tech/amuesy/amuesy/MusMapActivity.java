@@ -14,6 +14,7 @@ public class MusMapActivity extends AppCompatActivity {
         setContentView(R.layout.activity_musmap);
 
         Button mapBackBtn = findViewById(R.id.mapBackBtn);
+
         mapBackBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v1) {

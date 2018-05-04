@@ -41,6 +41,15 @@ public class InMuseumActivity extends AppCompatActivity {
             }
         });
 
+        Button musmapActBtn = findViewById(R.id.musmapActBtn);
+        musmapActBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(),MusMapActivity.class);
+                startActivity(startIntent);
+            }
+        });
+
 
     }
 }
