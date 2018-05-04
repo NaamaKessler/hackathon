@@ -45,7 +45,7 @@
         -->
 
         <activity
-            android:name=".MapsActivity1"
+            android:name=".MapActivity1"
             android:label="@string/title_activity_maps1" />
         <activity android:name=".SettingsActivity" />
         <activity android:name=".InMuseumActivity" />
