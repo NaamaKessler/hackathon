@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+
         // get user's setting:
         if ((getIntent().hasExtra("tech.amuesy.amuesy.profile")||
                 (getIntent().hasExtra("tech.amuesy.amuesy.level"))||
@@ -65,8 +66,16 @@ public class MainActivity extends AppCompatActivity {
             String profile_info = getIntent().getExtras().getString("tech.amuesy.amuesy.profile"); //todo: nullPtrExcept.
             String level_info = getIntent().getExtras().getString("tech.amuesy.amuesy.level");
             int hours_info = getIntent().getExtras().getInt("tech.amuesy.amuesy.hours");
+            int box1 = getIntent().getExtras().getInt("tech.amuesy.amuesy.box1");
+            int box2 = getIntent().getExtras().getInt("tech.amuesy.amuesy.box2");
+            Boolean box3 = getIntent().getExtras().getBoolean("tech.amuesy.amuesy.box3");
+            Boolean box4 = getIntent().getExtras().getBoolean("tech.amuesy.amuesy.box4");
+            Boolean box5 = getIntent().getExtras().getBoolean("tech.amuesy.amuesy.box5");
 
-            tv.setText(profile_info+","+level_info+","+hours_info);
+
+
+            tv.setText(profile_info+","+level_info+","+hours_info+","
+                    +box1+","+box2+","+box3+","+box4+","+box5);
 
             // save user's settings:
             SharedPreferences sharedPref = this.getPreferences(Context.MODE_PRIVATE);
