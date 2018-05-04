@@ -76,20 +76,20 @@
 
     <TextView
         android:id="@+id/Title"
-        android:layout_width="346dp"
-        android:layout_height="80dp"
+        android:layout_width="377dp"
+        android:layout_height="57dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="3dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="3dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="60dp"
         android:text="Name of Museum"
 
         android:textAlignment="center"
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

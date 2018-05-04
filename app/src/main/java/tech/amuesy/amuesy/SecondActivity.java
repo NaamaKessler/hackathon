@@ -24,7 +24,7 @@ public class SecondActivity extends AppCompatActivity {
         Button firstActivityBtn = findViewById(R.id.firstActBtn);
         Button chooseMusBtn = findViewById(R.id.chooseMusBtn);
 
-        //Continue's Button
+        //Back's Button
         firstActivityBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v1) {
@@ -53,7 +53,7 @@ public class SecondActivity extends AppCompatActivity {
 
 
 
-        //Back's Button
+        //Continue's Button
         chooseMusBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v1) {

@@ -9,7 +9,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -62,7 +61,6 @@ public class MainActivity extends AppCompatActivity {
         if ((getIntent().hasExtra("tech.amuesy.amuesy.profile")||
                 (getIntent().hasExtra("tech.amuesy.amuesy.level"))||
                 (getIntent().hasExtra("tech.amuesy.amuesy.hours")))){
-            TextView tv = (TextView) findViewById(R.id.textViewMain);
             String profile_info = getIntent().getExtras().getString("tech.amuesy.amuesy.profile"); //todo: nullPtrExcept.
             String level_info = getIntent().getExtras().getString("tech.amuesy.amuesy.level");
             int hours_info = getIntent().getExtras().getInt("tech.amuesy.amuesy.hours");
@@ -73,9 +71,6 @@ public class MainActivity extends AppCompatActivity {
             Boolean box5 = getIntent().getExtras().getBoolean("tech.amuesy.amuesy.box5");
 
 
-
-            tv.setText(profile_info+","+level_info+","+hours_info+","
-                    +box1+","+box2+","+box3+","+box4+","+box5);
 
             // save user's settings:
             SharedPreferences sharedPref = this.getPreferences(Context.MODE_PRIVATE);

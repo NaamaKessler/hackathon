@@ -159,7 +159,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="28dp"
-        android:text="Choose tour duration :"
+        android:text="Choose tour duration:"
         android:textAllCaps="false"
         android:textSize="18sp"
         android:textStyle="bold|italic"

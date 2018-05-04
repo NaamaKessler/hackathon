@@ -15,12 +15,14 @@
 
     <string-array name="Museums">
         <item>Paris</item>
-        <item>TLV</item>
+        <item>Tel Aviv</item>
         <item>Haifa</item>
         <item>Jerusalem</item>
         <item>London</item>
-        <item>AAA</item>
-        <item>Test</item>
+        <item>Roma</item>
+        <item>Berlin</item>
+        <item>New York</item>
+
     </string-array>
 
     <string name="Categories_1">Modern Art</string>

@@ -14,12 +14,12 @@ public class InMuseumActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_in_museum);
 
-        String musName="Wrong";
-        if(getIntent().hasExtra("tech.amuesy.amuesy.musName")){
-            musName = getIntent().getExtras().getString("tech.amuesy.amuesy.musName");
-        }
-        TextView tv = (TextView) findViewById(R.id.Title);
-        tv.setText(musName+"'s tech.amuesy.amuesy.Museum");
+        //if(getIntent().hasExtra("tech.amuesy.amuesy.musName")){
+            final String musName = getIntent().getExtras().getString("tech.amuesy.amuesy.musName");
+            TextView tv = (TextView) findViewById(R.id.Title);
+            tv.setText(musName+"'s Museum");
+        //}
+
 
 
         Button createtourActBtn = findViewById(R.id.createtourActBtn);
@@ -36,8 +36,9 @@ public class InMuseumActivity extends AppCompatActivity {
         musInfoActBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(),MusInfoActivity.class);
-                startActivity(startIntent);
+                Intent start1Intent = new Intent(getApplicationContext(),MusInfoActivity.class);
+                start1Intent.putExtra("tech.amuesy.amuesy.musName",musName);
+                startActivity(start1Intent);
             }
         });
 
@@ -46,6 +47,7 @@ public class InMuseumActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent startIntent = new Intent(getApplicationContext(),MusMapActivity.class);
+                startIntent.putExtra("tech.amuesy.amuesy.musName",musName);
                 startActivity(startIntent);
             }
         });
