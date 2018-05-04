@@ -45,13 +45,14 @@
         -->
 
         <activity
-            android:name=".MapsActivity1"
+            android:name=".MapActivity1"
             android:label="@string/title_activity_maps1" />
         <activity android:name=".SettingsActivity" />
         <activity android:name=".InMuseumActivity" />
         <activity android:name=".TourCreatorActivity" />
         <activity android:name=".MusInfoActivity" />
-        <activity android:name=".TourActivity"></activity>
+        <activity android:name=".TourActivity" />
+        <activity android:name=".MusMapActivity"></activity>
     </application>
 
 </manifest>

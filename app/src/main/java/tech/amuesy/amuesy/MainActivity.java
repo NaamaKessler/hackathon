@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
         nearbyActBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, MapsActivity1.class);
+                Intent intent = new Intent(MainActivity.this, MapActivity1.class);
                 startActivity(intent);
             }
         });
