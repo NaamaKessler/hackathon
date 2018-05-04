@@ -19,7 +19,6 @@ public class TourFactory {
      * Creates tour according to visitor specifications.
      * @param visitorType adult/child/expert
      * @param tourDuration minutes.
-     * @return Tour obj.
      */
     public ArrayList<Item> getTour(String visitorType, int tourDuration){
         ArrayList<Item> tour = new ArrayList<>();
