@@ -19,7 +19,7 @@ public class TourFactory {
      * @param visitorType adult/child/expert
      * @param tourDuration minutes.
      */
-    public ArrayList<Item> getTour(String visitorType, int tourDuration){
+    public static ArrayList<Item> getTour(String visitorType, int tourDuration){
         ArrayList<Item> tour = new ArrayList<>();
         int numItems = (int)Math.floor(tourDuration/ITEM_OBSERVATION_DURATION);
 

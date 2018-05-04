@@ -1,6 +1,8 @@
 package tech.amuesy.amuesy;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -69,13 +71,15 @@ public class TourCreatorActivity extends AppCompatActivity {
                 startIntent.putExtra("tech.amuesy.amuesy.box4",isChecked_4);
                 startIntent.putExtra("tech.amuesy.amuesy.box5",isChecked_5);
 
+                // create a new tour - get visitor's info:
+                SharedPreferences sharedPref = getPreferences(Context.MODE_PRIVATE);
+                final String profile = sharedPref.getString("profile_info", "Adult");
+                // create the tour:
+                ArrayList<Item> tour = TourFactory.getTour(profile, hours);
+                startIntent.putParcelableArrayListExtra("tech.amuesy.amuesy.tour", tour);
+
                 startActivity(startIntent);
             }
         });
-
-
-
     }
-
-
 }
