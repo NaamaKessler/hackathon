@@ -1,4 +1,4 @@
-
+package tech.amuesy.amuesy;
 
 public class Museum {
     private String openingHours;

@@ -19,7 +19,7 @@ public class InMuseumActivity extends AppCompatActivity {
             musName = getIntent().getExtras().getString("tech.amuesy.amuesy.musName");
         }
         TextView tv = (TextView) findViewById(R.id.Title);
-        tv.setText(musName+"'s Museum");
+        tv.setText(musName+"'s tech.amuesy.amuesy.Museum");
 
 
         Button createtourActBtn = findViewById(R.id.createtourActBtn);

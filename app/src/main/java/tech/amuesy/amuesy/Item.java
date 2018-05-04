@@ -1,3 +1,5 @@
+package tech.amuesy.amuesy;
+
 import java.util.List;
 
 public class Item {

@@ -12,7 +12,7 @@ import android.widget.Button;
 public class SecondActivity extends AppCompatActivity {
 
 
-    //Choose Museum Activity
+    //Choose tech.amuesy.amuesy.Museum Activity
 
     String name;
 
@@ -36,7 +36,7 @@ public class SecondActivity extends AppCompatActivity {
 
 
 
-        // Enter Museum Name
+        // Enter tech.amuesy.amuesy.Museum Name
         AutoCompleteTextView MusNameTxtp2 = findViewById(R.id.MusNameTxtp2);
         ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item,
                 getResources().getStringArray((R.array.Museums)));
