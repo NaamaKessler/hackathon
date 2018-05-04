@@ -17,5 +17,5 @@ public class Museum {
         String text = "Opening Hours:\n" + this.openingHours +"\nTel: " + this.phone + "\n" + this.address;
     }
 
-    //blabla
+    //blablakjhkjh
 }
