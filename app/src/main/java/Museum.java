@@ -16,4 +16,6 @@ public class Museum {
     public void PresentMuseum(){
         String text = "Opening Hours:\n" + this.openingHours +"\nTel: " + this.phone + "\n" + this.address;
     }
+
+    //blabla
 }
